@@ -6,8 +6,8 @@
 
 body{
   background-color: #f4f4f4;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,9 +15,8 @@ body{
 
 main.container{
   background-color: #FDFDFD;
-  width: 350px;
-  height: 600px;
-  margin: auto;
+  width: 270px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,36 +28,42 @@ header {
  position: absolute;
  border-radius: 50%;
  background-color: #023047;
- width: 170px;
- height: 170px;
+ width: 115px;
+ height: 115px;
  display: flex;
  justify-content: center;
  align-items: center;
  margin-top: 60px;
 }
 
+header .foto{
+  border-radius: 50%;
+  width: 100px;
+}
+
 img.pg {
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  height: 500px;
   object-fit: cover;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
   clip-path: polygon(50% 0%, 100% 0, 100% 35%, 0 16%, 0 0); 
-}
-header .foto{
-  border-radius: 50%;
+  position: absolute;
 }
 
-section.conteudo{
+section .conteudo{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 560px;
 }
 
-button{
-  position: absolute;
-  top: 310px;
+
+section .conteudo button{
+  position: relative;
+  z-index: 2;
+  margin-top: 10px;
   padding: 10px;
   border-radius: 40px;
   border: none;
@@ -67,6 +72,11 @@ button{
   animation: float 5s ease-in-out infinite;
   font-size: 1.1em;
   color: #fff;
+  cursor: pointer;
+}
+
+section .conteudo button:hover{
+  background-image: linear-gradient(to right, #9b83df, #c3bbd3);
 }
 
 @keyframes float {
@@ -85,8 +95,8 @@ button{
 
 footer.divisao{
   background-color: #023047;
-  width: 350px;
-  height: 600px;
+  width: 270px;
+  height: 500px;
   position: absolute;
   z-index: 1;
   display: flex;
@@ -103,3 +113,96 @@ span{
   font-style: italic;
 }
 
+
+@media(max-width: 400.98px){ 
+
+main.container, footer.divisao, img.pg{
+    width: 310px;
+}
+
+}
+
+@media(min-width: 401px) and (max-width: 476.98px){ 
+
+  main.container, footer.divisao, img.pg{
+      width: 350px;
+  }
+  
+  
+  }
+
+  @media(min-width: 477px) and (max-width: 526.98px){ 
+
+    main.container, footer.divisao, img.pg{
+        width: 375px;
+    }
+
+    header .foto{
+      width: 110px;
+      height: 110px;
+     }
+     
+     header{
+       width: 125px;
+       height: 125px;
+     }
+    
+    }
+
+    
+  @media(min-width: 527px) and (max-width: 1199.98px){ 
+
+    main.container, footer.divisao, img.pg{
+        width: 420px;
+        height: 600px;
+    }
+
+    header .foto{
+      width: 125px;
+      height: 125px;
+     }
+     
+     header{
+       width: 140px;
+       height: 140px;
+     }
+
+     section .conteudo{
+      height: 630px;
+     }
+
+     section .conteudo button{
+      padding: 15px;
+      margin-top: 20px;
+     }
+
+    
+    }
+
+    @media(min-width: 1200px){ 
+
+      main.container, footer.divisao, img.pg{
+          width: 490px;
+          height: 630px;
+      }
+  
+      header .foto{
+        width: 150px;
+        height: 150px;
+       }
+       
+       header{
+         width: 165px;
+         height: 165px;
+       }
+
+       section .conteudo{
+        height: 671px;
+       }
+
+       section .conteudo button{
+        padding: 15px;
+        margin-top: 20px;
+       }
+      
+      }
