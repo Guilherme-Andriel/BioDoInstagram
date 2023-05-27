@@ -65,6 +65,8 @@ button{
   background-image: linear-gradient(to right, #8060D8, #bdaddf);
   transform: translateY(0px);
   animation: float 5s ease-in-out infinite;
+  font-size: 1.1em;
+  color: #fff;
 }
 
 @keyframes float {
@@ -79,14 +81,6 @@ button{
   100%{
       transform: translateY(0px);
   }
-}
-
-
-
-a{
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #fff;
 }
 
 footer.divisao{
