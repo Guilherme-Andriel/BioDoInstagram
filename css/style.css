@@ -35,6 +35,8 @@ header {
  justify-content: center;
  align-items: center;
  margin-top: 60px;
+ transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
 }
 
 header .foto{
@@ -72,14 +74,12 @@ section .conteudo button{
   border-radius: 40px;
   border: none;
   background-image: linear-gradient(to right, #8060D8, #bdaddf);
-  transform: translateY(0px);
-  animation: float 5s ease-in-out infinite;
   font-size: 1.1em;
   color: #fff;
   cursor: pointer;
 }
 
-section .conteudo button:hover{
+section .conteudo button:hover, header:hover{
   background-image: linear-gradient(to right, #9b83df, #c3bbd3);
 }
 
